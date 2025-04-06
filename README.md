@@ -2,7 +2,7 @@
 
 
 ## 1. Diagrama Bloc
-![diagrama](BlockDiagram.png)
+![diagrama](Images/BlockDiagram.png)
 
 ## 2. BOM
 |DEVICE                                                  |PARTS                                                                                                  |PURCHASE URL                                                                                                                                      |DATASHEET URL                                                                                                                                     |
@@ -65,3 +65,25 @@
 | Qwiic/Stemma Connector | Expansiune conector senzori                                               | I2C                | I2C            |
 | LDO Voltage Regulator  | Genereaza o singură șină de alimentare de 3.3V                                             | -                         | -          |
 | Baterie (2500mAh)      | Baterie Li-Polimer de 2500mAh, 3.7V. Consum redus în deep sleep (sub 50µA) și alimentare de 3.3V pentru sistem                                                  | -                         | -          |
+
+## 4. Asezarea componentelor in carcasa
+
+* PCB-ul are o grosime de 1mm si este sprijinit de capacul carcasei
+* Bateria este sprijinita de capacul carcasei
+* Ecranul este sprijinit de spatele PCB-ului
+
+## 5. Decizii
+
+* Eroare SMD-Hole (Samacsys-Parts): Am rezolvat mutand gaurile cu 0.1 mm.
+
+* Eroare Copper width SMD (Net Class: SupplyLines): Am modificat pad-urile de la bobina (Ind_4828) sa fie mai mari (0.5 x 0.5 mm) ca sa permita conectarea cu liniile de putere.
+
+* Eroare Copper width SMD (Net Class: SupplyLines): Am modificat pad-urile de la SON50P200X sa fie mai mari (de la 0.27 mm la 0.3 mm) ca sa permita conectarea cu liniile de putere (VBAT).
+
+* Am aprobat erorile de Power Pin ... connected to ... din Schematic.
+
+## Imagini PCB
+![imagine1](Images/PCB_2D.png)
+![imagine2](Images/PCB_3D.png)
+
+
