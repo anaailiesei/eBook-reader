@@ -83,7 +83,7 @@
 * Am aprobat erorile de Power Pin ... connected to ... din Schematic.
 
 ## Imagini PCB
-![imagine1](Images/PCB_2D.png)
+![imagine1](Images/PCB_2D_TOP.png)
 ![imagine2](Images/PCB_3D.png)
 
 
