@@ -72,16 +72,16 @@
 * Bateria este sprijinita de capacul carcasei
 * Ecranul este sprijinit de spatele PCB-ului
 
-## Pasi de implementare
+## 5. Pasi de implementare
 1. Am realizat schematicul cu ajutor componentelor din libraria data si schematicul model.
 2. De la schematic am generat PCB-ul 2D. Am adaugat componentele pe PCB conform schemei date.
 3. Am facut un nou net class pentru liniile de putere (SupplyNets) si am adaugat liniile corespunzatoare. Am facut o regula speciala pentru grosimea acestor linii (0.3mm).
 4. Am rutat manual liniile de putere pentru a ma asigura ca nu folosesc vias-uri prea multe (a fost necesar sa folosesc vias-uri o singura data). Am facut apoi autorutarea.
 5. Am adaugat planurile de masa si via stiches.
-6. Am adaugat pentru fiecare componenta un model 3D.
+6. Am adaugat pentru fiecare componenta un model 3D. Am tinut cont la elementele polarizate sau marcate de orientarea componentei pentru o reprezentare cat mai realista.
 7. Am modelat bateria si ecranul conform datasheetului si le-am asamblat in carcasa.
 
-## 5. Decizii
+## 6. Decizii
 
 * Eroare SMD-Hole (Samacsys-Parts): Am rezolvat mutand gaurile cu 0.1 mm.
 
@@ -91,8 +91,12 @@
 
 * Am aprobat erorile de Power Pin ... connected to ... din Schematic.
 
-## Imagini PCB
+## 7. Dificultati
+* Gasirea modelelor 3D pentru fiecare componenta, actualizarea bibliotecii, aranjarea lor sa se potriveasca cu footprint-ul.
+* M-am asigurat ca nu am froarte multe vias-uri la traseele de putere si a trebuit sa fac o parte din rutare manual. Nu am putut evita o situatie (traseele ar fi ajuns sa fie exagerat de lungi din cauza ocolirilor daca nu foloseam) si a fost nevoie sa folosesc vias-uri pe un traseu de putere.
+* Desi nu am avut de facut modele 3D complexe, aceasta a fost o provocare deoarece a fost prima data cand am facut asa ceva.
+
+## 8. Imagini PCB
 ![imagine1](Images/PCB_2D_TOP.png)
 ![imagine2](Images/PCB_3D.png)
-
 
