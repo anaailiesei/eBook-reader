@@ -95,6 +95,7 @@
 * Gasirea modelelor 3D pentru fiecare componenta, actualizarea bibliotecii, aranjarea lor sa se potriveasca cu footprint-ul.
 * M-am asigurat ca nu am froarte multe vias-uri la traseele de putere si a trebuit sa fac o parte din rutare manual. Nu am putut evita o situatie (traseele ar fi ajuns sa fie exagerat de lungi din cauza ocolirilor daca nu foloseam) si a fost nevoie sa folosesc vias-uri pe un traseu de putere.
 * Desi nu am avut de facut modele 3D complexe, aceasta a fost o provocare deoarece a fost prima data cand am facut asa ceva.
+* Verificarea ca traseele sa nu contina unghiuri drepte si corectarea lor.
 
 ## 8. Imagini PCB
 ![imagine1](Images/PCB_2D_TOP.png)
